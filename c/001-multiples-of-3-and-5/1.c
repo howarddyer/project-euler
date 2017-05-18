@@ -3,7 +3,7 @@
 
 /*
   Go through numbers 1 to 1000
-  Sum those divisable by 3
+  Sum those divisable by 3 or 5
 */
 
 int main () {
@@ -16,7 +16,7 @@ int solution() {
 
 
   for (i = 1; i < 1000; i++) {
-    if (i % 3 == 0 ) {
+    if (i % 3 == 0 || i % 5 == 0 ) {
       sum += i;
     }
   }

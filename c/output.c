@@ -4,14 +4,15 @@
 int output ( int (*f) ) {
 
   int t,
-      repeat = 10;
+      repeat = 10,
+      solution;
   double timespent;
 
   for (t = 0; t < repeat; t++) {
 
     clock_t begin = clock();
 
-    solution();
+    solution = solution();
 
     clock_t end = clock();
 
@@ -22,7 +23,7 @@ int output ( int (*f) ) {
 
   timespent /= repeat;
 
-  printf("Answer = %d\n", solution());
+  printf("Answer = %d\n", solution;
   printf("Time spent = %f\n", timespent);
 
 }

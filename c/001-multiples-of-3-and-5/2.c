@@ -7,6 +7,9 @@
   Sum those divisable by 3 or 5
 */
 
+int solution();
+int divisableBy(int);
+
 int main () {
   output(solution);
 }

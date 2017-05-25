@@ -6,6 +6,8 @@
   Sum those divisable by 3 or 5
 */
 
+int solution();
+
 int main () {
   output(solution);
 }

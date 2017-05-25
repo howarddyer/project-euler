@@ -1,18 +1,18 @@
 #import <stdio.h>
 #import <time.h>
 
-int output ( int (*f) ) {
+void output ( int (*f)() ) {
 
   int t,
       repeat = 10,
-      solution;
+      answer;
   double timespent;
 
   for (t = 0; t < repeat; t++) {
 
     clock_t begin = clock();
 
-    solution = solution();
+    answer = (*f)();
 
     clock_t end = clock();
 
@@ -23,7 +23,7 @@ int output ( int (*f) ) {
 
   timespent /= repeat;
 
-  printf("Answer = %d\n", solution;
+  printf("Answer = %d\n", answer);
   printf("Time spent = %f\n", timespent);
 
 }
